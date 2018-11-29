@@ -29,3 +29,4 @@ comments.print = function(){
         console.log(el);
     });
 }
+
