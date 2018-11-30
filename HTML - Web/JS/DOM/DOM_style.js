@@ -43,3 +43,4 @@ document.classList.toggle("another-class");
 // JS for DOM_style.html
 var p = document.querySelector("p");
 p.classList.add("big");
+
