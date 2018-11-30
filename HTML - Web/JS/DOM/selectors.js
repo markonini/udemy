@@ -29,4 +29,3 @@ lis // those are objects
 
 var bolded = document.querySelectorAll(".bolded"); // return all "bolded" class
 var bolded = document.querySelector(".bolded") // return only first "bolded" class
-
