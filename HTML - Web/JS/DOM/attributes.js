@@ -17,3 +17,4 @@ a.setAttribute("href","https://www.corgies.com");
 // Change text "link to google"
 var link = document.querySelector("a");
 link.textContent = "Link to Corgies"
+
