@@ -38,4 +38,3 @@ paragraph.addEventListener("click", changeText);
 function changeText(){
     paragraph.textContent = "someone clicked on P!!!";
 }
-
