@@ -22,7 +22,7 @@ $("input").keypress(function(event){
 });
 
 // which:106 every key has it's own code with command above it is 106
-// if user hit's enter then aler it (code 13)
+// if user hit's enter then alert it (code 13)
 $("input").keypress(function(perazdera){
     if(perazdera.which === 13){
         alert("you clicked enter")
