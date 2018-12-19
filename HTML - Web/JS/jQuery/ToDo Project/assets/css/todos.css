@@ -1,3 +1,10 @@
+body {
+    background: #BBD2C5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: Roboto;
+}
+
 h1 {
     background-color: #2980b9;
     color: white;
@@ -15,8 +22,18 @@ ul {
     padding: 0;
 }
 
-body {
-    font-family: Roboto;
+span {
+    background-color: #e74c3c;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    width: 0;
+    display: inline-block;
+    /* animate span move*/
+    transition: 0.2s linear;
+    /* hide trash can not to be visible */
+    opacity: 0;
 }
 
 li {
@@ -26,9 +43,24 @@ li {
     color: #666;
 }
 
+/* plus znak koristili smo cdn ikonica */
+.fa-plus {
+    float: right;
+}
+
+
 li:nth-child(2n){
     background: #f7f7f7;
 }
+
+
+/* when we hover over li, span will get 40px */
+li:hover span {
+    width: 40px;
+    /* show trash can */
+    opacity: 1.0;
+}
+
 input {
     font-size: 18px;
     color: #2980b9;
@@ -37,6 +69,7 @@ input {
     padding: 13px 13px 13px 20px;
     /* podesi box ne ide van granica */
     box-sizing: border-box;
+    border: 3px solid rgba(0, 0, 0, 0);
     }
 
 /* dodaj fokus na input box */

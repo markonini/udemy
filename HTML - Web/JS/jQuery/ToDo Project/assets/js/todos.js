@@ -24,8 +24,8 @@ $("input[type='text']").keypress(function(perazdera){
         var todoText = ($(this).val());
         // clear textbox
         $(this).val("");
-        // create new li and add to ul
-        $("ul").append("<li><span>X</span> " + todoText + "</li>");
+        // create new li and add to ul and adding trash can
+        $("ul").append("<li><span><i class='fa fa-trash'></i></span> " + todoText + "</li>");
     }
 });
 
@@ -33,3 +33,8 @@ $("input[type='text']").keypress(function(perazdera){
 // Click() wil be only adds listeners for existing elements and
 // on() will add listener for all potential future elements
 // $("ul").on("click", "li", funtion(){} we can only add listener using jQuery on elements that exists when this code is run for the first ime
+
+// make + button to work = show/hide textbox
+$(".fa-plus").click(function(){
+    $("input[type='text']").fadeToggle();
+});
